@@ -4,3 +4,6 @@ FROM jupyter/scipy-notebook
 COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
+
+# Install conda deps
+RUN conda env update -f environment.yml
