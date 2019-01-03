@@ -1,1 +1,2 @@
-FROM elben10/numecon-mybinder
+FROM jupyter/scipy-notebook
+
