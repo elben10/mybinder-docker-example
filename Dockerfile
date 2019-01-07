@@ -12,6 +12,7 @@ RUN conda env update -f environment.yml && \
       'pkg-config' && \
       pip install bash_kernel && \
       python -m bash_kernel.install && \
+      ln -s /usr/lib/x86-64-linux-gnu/libLLVM.6.0.so.1 /usr/lib/x86-64-linux-gnu/libLLVM.so && \
       julia -e 'import Pkg; Pkg.update(); Pkg.add("IJulia")' && \
       go get -u github.com/gopherdata/gophernotes && \
       mkdir -p ~/.local/share/jupyter/kernels/gophernotes && \
