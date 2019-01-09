@@ -1,4 +1,4 @@
-FROM elben10/docker-jupyterlab:c97f4c97f2e43770fde93b5a911d7a55abd44b60
+FROM elben10/docker:18046e5b281148120f166ee643de0a82f317a231
 
 # Make sure the contents of our repo are in ${HOME} 
 COPY . ${HOME}
